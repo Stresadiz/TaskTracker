@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Task Tracker Project</h1>
+        <p>La idea de este proyecto es poder crear un CRUD de tareas almacenadas en un json file</p>
+    </header>
+    <main>
+        <section id="information">
+            <p id="description">
+                A continuacion sus tareas agregadas:
+            </p>
+        </section>
+        <section id="cards">
+            <!--
+                Card de ejemplo:
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Card Title</h2>  
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis esse aliquid hic.</p>
+                    <button class="btn btn-danger">
+                        Delete
+                    </button>
+                    <div class="card-footer">
+                        <label for="Complete">Completada:</label><input type="checkbox" name="Complete" id="complete">
+                    </div> 
+                </div>
+            </div>
+
+            -->
+            <div class="card card--void" id="cardDefault">
+                <div class="card-body--void">
+                    <p class="card-text">De click al botón para agregar una nueva tarjeta</p>
+                    <button class="btn btn-accept" id="addNewCard">Agregar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/card.js"></script>
+</body>
+</html>

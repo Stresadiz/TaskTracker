@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+:root{
+    --bg-color-main: rgb(59, 51, 51);
+    --bg-color-header: rgb(69, 69, 112);
+    --bg-color-body:rgb(24, 23, 23);
+}
+
+body{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1em;
+    height: 100%;
+    background-color: var(--bg-color-body);
+    padding: 0.5em 1em;
+}
+
+main{
+    background-color: var(--bg-color-main);
+    padding: 1em 1em;
+    margin: 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header{
+    background-color: var(--bg-color-header);
+    padding: 1em 1em;
+    margin: 0em 0.5em;
+}
+
+/* ---------------------------------------------- Cards ----------------------------------------*/
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 16px  16px 16px 16px;
+    width: 210px;
+    gap: 1em;
+    box-shadow: 2px 7px 13px 0px rgba(0,0,0,0.2);
+    overflow: hidden; 
+    
+    border-color: #000000;
+}
+
+.card-body{
+    background-color: #c4c0c0;
+    flex-grow: 1;
+    padding: 24px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.card-body--void{
+    background-color: #c4c0c000;
+    flex-grow: 1;
+    padding: 24px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.card-title{
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0px; 
+    padding: 0px; 
+     
+}
+.card-text{
+    line-height: 1.4;
+    font-size: 17px;
+    color: #000000;
+    
+}
+
+.card-footer{
+    font-size: 15px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.btn-danger{
+    background-color: red;
+    color: white;
+}
+
+.btn-accept{
+    background-color: rgb(7, 68, 70);
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    appearance: none;
+    border: 1px solid transparent;
+    padding: 0.3em 0.8em;
+    border-radius: 15%;
+    font-size: 12px;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    border: 1px solid rgb(110, 110, 110);
+    transition: opacity 1s;
+    transition: border 1s;
+}
+
+.card--void{
+    background-color: #272323a4;
+    width: 210px;
+    height: 276px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
