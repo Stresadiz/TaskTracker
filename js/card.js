@@ -99,8 +99,9 @@ function completesChecks(array) {
     array.forEach((input, index) =>{
         arrayDeCards[index].complete = input.checked;
     })
-    
+
     updateJson();
+    validateValue();
 }
 
 function renderCards(array) {
