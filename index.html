@@ -16,6 +16,11 @@
             <p id="description">
                 A continuacion sus tareas agregadas:
             </p>
+            <select name="filter" id="cardFilter" onchange="validateValue()">
+                <option value="all" selected>Mostrar todas</option>
+                <option value="completes">Mostrar completadas</option>
+                <option value="noCompletes">Mostrar pendientes</option>
+            </select>
         </section>
         <section id="cards">
             <!--
@@ -37,10 +42,15 @@
             -->
             <div class="card card--void" id="cardDefault">
                 <div class="card-body--void">
+                    <h2 class="card-title">Card Title</h2>  
                     <p class="card-text">De click al botón para agregar una nueva tarjeta</p>
                     <button class="btn btn-accept" id="addNewCard">Agregar</button>
                 </div>
             </div>
+        </section>
+        <section id="JspnVisualizer">
+            <h2>Resultado en Json</h2>
+            <textarea id="textJson" rows="20" cols="50"></textarea>
         </section>
     </main>
 

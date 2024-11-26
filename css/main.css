@@ -36,6 +36,12 @@ header{
     margin: 0em 0.5em;
 }
 
+#information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* ---------------------------------------------- Cards ----------------------------------------*/
 
 #cards{
@@ -131,8 +137,13 @@ header{
 .card--void{
     background-color: #272323a4;
     width: 210px;
-    height: 276px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#JspnVisualizer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
