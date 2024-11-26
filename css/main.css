@@ -103,10 +103,13 @@ header{
 .card-footer{
     font-size: 15px;
     display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
+
+/* ----------------- BTS ------------------------------*/
 
 .btn-danger{
     background-color: red;
@@ -115,6 +118,11 @@ header{
 
 .btn-accept{
     background-color: rgb(7, 68, 70);
+    color: rgb(255, 255, 255);
+}
+
+.btn-edit{
+    background-color: rgb(216, 129, 15);
     color: rgb(255, 255, 255);
 }
 
