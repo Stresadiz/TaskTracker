@@ -23,7 +23,7 @@ addNewCardBtn.addEventListener("click", e =>{
     
     if (cardNodes.length < maxCards) {
         
-        let objCard = {titleCard:title, textCard:title, complete:false, id:numCard}
+        let objCard = {titleCard:title, textCard:text, complete:false, id:numCard}
         arrayDeCards[numCard] = objCard;
         
         
@@ -79,7 +79,7 @@ function changeTextCard() {
     }
     while (text == "" || text.length > maxLenghtTextCard) {
         text = prompt("Ingrese el texto aqui:");
-        if (title.length > maxLenghtTitle) {
+        if (text.length > maxLenghtTitle) {
             alert("El texto a ingresar no puede superar los " + maxLenghtTextCard + " caracteres")
         }
     }
